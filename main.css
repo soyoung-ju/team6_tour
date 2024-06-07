@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'TTHakgyoansimKossuyeomR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimKossuyeomR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: #333;
   font-size: 16px;
@@ -10,8 +23,24 @@ a{
   text-decoration: none;
 }
 
+header {
+  width: 100%;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+  position: fixed;
+  top:0;
+  z-index: 9;
+  font-family: 'OTWelcomeRA';
+}
+
+nav.navbar {
+  background-color: #f6f5f0 !important;
+}
+.navbar {
+  height: 70px;
+}
 .container-fluid {
-  background-color: #fff;
+ 
 }
 
 .nav-link {
@@ -21,6 +50,15 @@ a{
   color: green;
 }
 
+.form-control {
+  background-color: #f6f5f0;
+}
+
+
+
+.carousel-caption {
+  font-family: 'TTHakgyoansimKossuyeomR';
+}
 
 
 
@@ -29,14 +67,22 @@ a{
 }
 
 .card .card-body {
-  
+  position: relative;
 }
+.card-des {
+  position: absolute;
+  top: 35%;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+}
+
 .card .card-body .card-title {
   
 }
 
 .card-text {
-  
+  font-family: 'OTWelcomeRA';
 }
 
 .card img {
@@ -46,4 +92,8 @@ a{
   transform: scale(1.2);             
   transition: transform .3s;
   filter: brightness(0.5);
+}
+.card img:hover + .card-des {
+  opacity: 1;
+  transition: all .5s;
 }
