@@ -17,7 +17,6 @@ a {
   position: absolute;
   top: 32%;
   left: 15%;
-  text-shadow: 2px 2px 5px #ccc;
 }
 
 .carousel-title {
@@ -28,7 +27,6 @@ a {
 
 .carousel-subtitle {
   font-weight: 700;
-  font-size: 20px;
   margin-bottom: -3px;
 }
 
@@ -36,12 +34,24 @@ a {
   margin: 0;
 }
 
+.carousel-text-box.text-white {
+  color: #fff;
+} 
+
+.carousel-item:last-child .carousel-text-box {
+  text-shadow: 1px 1px 5px black;
+}
+
 
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
   .carousel-title {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .carousel-subtitle {  
+    font-size: 20px;
   }
 
   .carousel-description {
