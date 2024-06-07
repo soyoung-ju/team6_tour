@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 캐러셀 */
+.carousel-item-box {
+  position: relative;
+}
+.carousel-text-box {
+  position: absolute;
+  top: 32%;
+  left: 15%;
+  text-shadow: 2px 2px 5px #ccc;
+}
+
+.carousel-title {
+  margin-bottom: 13px;
+  font-size: 50px;
+  font-weight: 900;
+} 
+
+.carousel-subtitle {
+  font-weight: 900;
+}
+
+.carousel-description {
+  margin: 0;
+}
