@@ -4,15 +4,60 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* 공통 클래스 */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* 캐러셀 */
+.section-title-box {
+  margin-bottom: 20px;
+}
+
+.section-title-box h2 {
+  margin-bottom: 10px;
+}
+
+.section-title-box h6 {
+  color: gray;
+}
+
+.image-scale-box {
+  overflow: hidden;
+}
+
+.image-scale-box img {
+  transition: all 400ms;
+}
+
+.image-scale-box img:hover {
+  transform: scale(1.05);
+}
+
+.card-text-box {
+  margin-bottom: 15px;
+}
+
+.badge {
+  border: 1px solid #bbb;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.badge-group {
+  margin-bottom: 10px;
+}
+
+
+/* section 1 캐러셀 */
+.carousel {
+  margin-bottom: 150px;
+}
+
 .carousel-item-box {
   position: relative;
 }
+
 .carousel-text-box {
   position: absolute;
   top: 32%;
@@ -43,9 +88,28 @@ a {
 }
 
 
+/* section 2 특가할인 */
+
+.btn-more {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
+  
+  /* section1 캐러셀 */
   .carousel-title {
     font-size: 25px;
   }
@@ -57,4 +121,7 @@ a {
   .carousel-description {
     display: none;
   }
+
+
+  /* section 2 특가 할인 */
 }
