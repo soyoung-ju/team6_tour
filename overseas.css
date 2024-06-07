@@ -17,11 +17,36 @@ a {
   
 .nav-link:hover {
     color: green;
-  }
+}
+
+.md_title {
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+}
 
 
 
-/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* 이미지 슬라이더 
 .container {
     width: 100%;
     transition: transform 0.5s;

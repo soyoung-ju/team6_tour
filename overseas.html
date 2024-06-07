@@ -91,17 +91,17 @@
         </button>
     </div>
     
-    <div class="mt-4 mb-4">
-        <h5>MD 추천상품</h5>
+    <div class="text-center mt-4 mb-4">
+        <h5 class="md_title">MD 추천상품</h5>
     </div>
     
-    <div class="container mb-5">
+    <div class="container mmb-5">
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <div class="card">
                     <img src="image/overseas_image/overseas_4.png" class="card-img-top" alt="싱가포르">
                     <div class="card-body">
-                        <h5 class="card-title text-center">싱가포르 5일/6일</h5>
+                        <h5 class="card-title text-center">[가족여행추천] 싱가포르 5일/6일</h5>
                         <p class="card-text text-center">자유일정은 내 마음대로~! 핵심관광은 가이드와 함께 안심 여행!</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -118,7 +118,7 @@
                         <p class="card-text text-center">4성급호텔+코끼리보호소+온천</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">#위앙꿈깜 #왓수완독 #코끼리보호소 #로얄라차프륵 #칸톡디너</li>
+                        <li class="list-group-item text-center">#위앙꿈깜 #왓수완독 #코끼리보호소 #칸톡디너 #로얄라차프륵</li>
                     </ul>
                 </div>
             </div>
@@ -167,14 +167,12 @@
         // 버튼 클릭 시 이벤트 실행
         document.querySelector('.button1').addEventListener('click', function() {
             document.querySelector('.container').style.transform = 'translate(0vw)';
-        });
+        });  
 
-        // 버튼2      
         document.querySelector('.button2').addEventListener('click', function() {
             document.querySelector('.container').style.transform = 'translate(-100vw)';
         });
-
-        // 버튼3
+       
         document.querySelector('.button3').addEventListener('click', function() {
             document.querySelector('.container').style.transform = 'translate(-200vw)';
         });
