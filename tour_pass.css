@@ -1,1 +1,139 @@
-/*임시 커밋*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 공통 클래스 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-title-box {
+  margin-bottom: 20px;
+}
+
+.section-title-box h2 {
+  margin-bottom: 10px;
+}
+
+.section-title-box h6 {
+  color: gray;
+}
+
+.image-scale-box {
+  overflow: hidden;
+}
+
+.image-scale-box img {
+  transition: all 400ms;
+}
+
+.image-scale-box img:hover {
+  transform: scale(1.05);
+}
+
+.card-text-box {
+  margin-bottom: 15px;
+}
+
+.badge {
+  border: 1px solid #bbb;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.badge-group {
+  margin-bottom: 10px;
+}
+
+.btn-more {
+  width: 100%;
+}
+
+
+/* section 1 캐러셀 */
+.carousel {
+  margin-bottom: 150px;
+}
+
+.carousel-item-box {
+  position: relative;
+}
+
+.carousel-text-box {
+  position: absolute;
+  top: 32%;
+  left: 15%;
+}
+
+.carousel-title {
+  margin-bottom: 13px;
+  font-size: 50px;
+  font-weight: 700;
+} 
+
+.carousel-subtitle {
+  font-weight: 700;
+  margin-bottom: -3px;
+}
+
+.carousel-description {
+  margin: 0;
+}
+
+.carousel-text-box.text-white {
+  color: #fff;
+} 
+
+.carousel-item:last-child .carousel-text-box {
+  text-shadow: 1px 1px 5px black;
+}
+
+
+/* section 2 특가할인 */
+.section2 {
+  margin-bottom: 150px;
+}
+
+
+/* ection 3 Team6 Tour 추천 상품 */
+
+
+
+
+
+
+
+
+
+
+
+/* 모바일 ------------------------------*/
+@media (max-width: 48rem) {
+  
+  .card {
+    margin-bottom: 10px;
+  }
+
+  /* section1 캐러셀 */
+  .carousel {
+    margin-bottom: 100px;
+  }
+
+  .carousel-title {
+    font-size: 25px;
+  }
+
+  .carousel-subtitle {  
+    font-size: 20px;
+  }
+
+  .carousel-description {
+    display: none;
+  }
+
+
+  /* section 2 특가 할인 */
+}
