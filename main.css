@@ -10,6 +10,9 @@ a{
   text-decoration: none;
 }
 
+.container-fluid {
+  background-color: #fff;
+}
 
 .nav-link {
   font-weight: 700;
@@ -18,3 +21,29 @@ a{
   color: green;
 }
 
+
+
+
+.card {
+  border: 0;
+}
+
+.card .card-body {
+  
+}
+.card .card-body .card-title {
+  
+}
+
+.card-text {
+  
+}
+
+.card img {
+  filter: brightness(1);
+}
+.card img:hover {
+  transform: scale(1.2);             
+  transition: transform .3s;
+  filter: brightness(0.5);
+}
