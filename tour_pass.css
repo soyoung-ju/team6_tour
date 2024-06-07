@@ -48,6 +48,10 @@ a {
   margin-bottom: 10px;
 }
 
+.btn-more {
+  width: 100%;
+}
+
 
 /* section 1 캐러셀 */
 .carousel {
@@ -89,12 +93,12 @@ a {
 
 
 /* section 2 특가할인 */
-
-.btn-more {
-  width: 100%;
+.section2 {
+  margin-bottom: 150px;
 }
 
 
+/* ection 3 Team6 Tour 추천 상품 */
 
 
 
