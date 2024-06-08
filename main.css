@@ -4,18 +4,19 @@
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: 'OTWelcomeRA';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-} */
 @font-face {
   font-family: 'Cafe24Syongsyong';
   src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: #333;
   font-size: 16px;
@@ -24,8 +25,24 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-a{
-  text-decoration: none;
+section {
+  margin-top: 150px;
+}
+
+section h6 {
+  color: gray;
+}
+
+.image-scale-box {
+  overflow: hidden;
+}
+
+.image-scale-box img {
+  transition: all 400ms;
+}
+
+.image-scale-box img:hover {
+  transform: scale(1.05);
 }
 
 
@@ -42,9 +59,6 @@ header {
 nav.navbar {
   background-color: #f6f5f0 !important;
 }
-.navbar {
-  height: 70px;
-}
 
 .nav-link {
   font-weight: 700;
@@ -57,14 +71,20 @@ nav.navbar {
   background-color: #f6f5f0;
 }
 
+
+.carousel.slide {
+  padding-top: 67px;
+}
 .carousel-caption {
   font-family: 'TTHakgyoansimKossuyeomR';
 }
 
-
-
 /* CIRCLE CARD */
 
+.circle {
+  width: 100%;
+  background-color: #F8F4E1;
+}
 .circle-card {
   border: 0;
 }
@@ -80,6 +100,17 @@ nav.navbar {
   text-align: center;
   font-family: 'Cafe24Syongsyong';
   font-size: 24px;
+}
+
+.carousel-caption {
+  position: absolute;
+
+  top: 8rem;
+
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
 }
 
 .circle-card-text {
@@ -106,14 +137,14 @@ nav.navbar {
 
 
 /* LIVE M : CARD*/
-.live {
-  display: flex;
-  justify-content: center;
+.live .card {
+  border: 0;
+  border-radius: 15px;
 }
 
-
-
-
+.live .card .card-body {
+  padding-top: 10px;
+}
 
 
 /* BANNER */
@@ -191,19 +222,20 @@ nav.navbar {
 span.light {
   position: relative;
   display: inline-block;
-  
-  &:before {
-    position: absolute;
-    left: 0;
-    top: -10%;
-    width: 100%;
-    height: 120%;
-    background: tomato;
-    filter: blur(10px);
-    content: "";
-    opacity: 0;
-    animation: flash .5s ease-out alternate infinite;
-  }}
+}
+
+span.light:before {
+  position: absolute;
+  left: 0;
+  top: -10%;
+  width: 100%;
+  height: 120%;
+  background: tomato;
+  filter: blur(10px);
+  content: "";
+  opacity: 0;
+  animation: flash 0.5s ease-out alternate infinite;
+}
 
 @keyframes flash{
   to {
