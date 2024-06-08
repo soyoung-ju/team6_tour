@@ -52,6 +52,40 @@ a {
   width: 100%;
 }
 
+/* HEAEDR */
+
+header {
+  width: 100%;
+  background-color: #f6f5f0;
+  position: fixed;
+  top:0;
+  z-index: 9;
+}
+
+nav.navbar {
+  background-color: #f6f5f0 !important;
+}
+.navbar {
+  height: 70px;
+}
+
+.nav-link {
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: green;
+}
+
+.form-control {
+  background-color: #f6f5f0;
+}
+
+.carousel-caption {
+  font-family: 'TTHakgyoansimKossuyeomR';
+}
+
+
+
 /* section 1 캐러셀 */
 .carousel {
   margin-bottom: 150px;
