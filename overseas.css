@@ -19,30 +19,26 @@ a {
     color: green;
 }
 
-.md_title {
+.title {
     font-weight: bold;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.sub-title {
+    color: gray;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+  
 .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     transition: 0.5s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.southeast-asia {
+    background-color: #F8F8F8;
+    padding: 10px 0;
+}
 
 
   
