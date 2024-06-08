@@ -129,6 +129,7 @@ a {
   overflow: hidden;
   background-color: #eee;
   position: relative;
+  flex-shrink: 0;
 }
 
 .section5-box-item img {
