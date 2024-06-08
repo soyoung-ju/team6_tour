@@ -1,184 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team6 tour</title>
     <link rel="icon" href="./image/favicon.png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="logal_trip.css">
+    <link rel="stylesheet" href="local_trip.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
-        <div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+            <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
-            <img src="./image/team6_tour.png" alt="logo" width="220" />
+                <img src="./image/team6_tour.png" alt="logo" width="220" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./overseas.html">해외여행</a>
+                    <a class="nav-link" aria-current="page" href="./overseas.html">해외여행</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./local_trip.html">국내여행</a>
+                    <a class="nav-link" href="./local_trip.html">국내여행</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./tour_pass.html">투어/패스</a>
+                    <a class="nav-link" href="./tour_pass.html">투어/패스</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">항공</a>
+                    <a class="nav-link" href="#">항공</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">호텔</a>
+                    <a class="nav-link" href="#">호텔</a>
                 </li>
-            </ul>
-            <form class="d-flex" role="search">
+                </ul>
+                <form class="d-flex" role="search">
                 <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
-                Search
+                    Search
                 </button>
-            </form>
+                </form>
             </div>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </header>
         
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/local_trip/local_trip_slide_01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/local_trip/local_trip_slide_02.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/local_trip/local_trip_slide_03.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/local_trip/local_trip_slide_04.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="image/local_trip/local_trip_slide_01.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="image/local_trip/local_trip_slide_02.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="image/local_trip/local_trip_slide_03.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="image/local_trip/local_trip_slide_04.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <!-- 화면 사이즈가 클때 col-lg-3
-          
-    -->
-
-    <div class="container">
-        <div class="row mt-5 mb-5">
-            <div class="col-md-12">
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="image/local_trip/local_trip_card_1_01.avif" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">1</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="image/local_trip/local_trip_card_1_02.avif" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="image/local_trip/local_trip_card_1_03.avif" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="image/local_trip/local_trip_card_1_04.avif" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="image/local_trip/local_trip_card_1_05.avif" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">5</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="image/local_trip/local_trip_card_1_06.avif" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">6</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-            
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
+        <!-- Team6_tour 추천 상품 -->
+        <div class="card_box mt-5">
+            <div class="row">
+                <div class="col text-center card-title">
+                    <div class="h3">Team6_Tour의 추천 상품</div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-md-12">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 mb-3">
+                                        <div class="card h-100">
+                                            <div class="image-scale-box">
+                                            <img src="./image/local_trip/local_trip_card_1_6.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <a href="#">
+                                            <div class="card-body">
+                                                <div class="badge-group">
+                                                <span class="badge text-bg-light section2-badge">TOP1🥇</span>
+                                                <span class="badge text-bg-light section2-badge">패키지</span>
+                                                <span class="badge text-bg-light section2-badge">여행기간 3일</span>
+                                                </div>
+                                                <div class="card-text-box">
+                                                <h5>[대한항공 연합상품]제주 3일 #1인부터출발확정 #제주도+우도+마라도 #럭셔리요트투어</h5>
+                                                <h5>100,000원</h5>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-dark btn-more">상품 상세보기</a>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-sm-12 mb-3">
+                                        <div class="card h-100">
+                                            <div class="image-scale-box">
+                                            <img src="./image/local_trip/local_trip_card_1_2.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <a href="#">
+                                            <div class="card-body">
+                                                <div class="badge-group">
+                                                <span class="badge text-bg-light section2-badge">TOP2🥈</span>
+                                                <span class="badge text-bg-light section2-badge">패키지</span>
+                                                <span class="badge text-bg-light section2-badge">여행기간 3일</span>
+                                                </div>
+                                                <div class="card-text-box">
+                                                <h5>[우리끼리 우도 단독투어] 제주 #더베스트제주성산호텔 #프라이빗투어 #모이면싸진다</h5>
+                                                <h5>639,000원~</h5>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-dark btn-more">상품 상세보기</a>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 mb-3">
+                                        <div class="card h-100">
+                                            <div class="image-scale-box">
+                                            <img src="./image/local_trip/local_trip_card_1_3.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <a href="#">
+                                            <div class="card-body">
+                                                <div class="badge-group">
+                                                <span class="badge text-bg-light section2-badge">TOP3🥉</span>
+                                                <span class="badge text-bg-light section2-badge">패키지</span>
+                                                <span class="badge text-bg-light section2-badge">여행기간 3일</span>
+                                                </div>
+                                                <div class="card-text-box">
+                                                <h5>[제주글램핑] 제주3일#프라이빗#단독#자연 속 하룻밤</h5>
+                                                <h5>749,000원~</h5>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-dark btn-more">상품 상세보기</a>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-12 mb-3">
+                                        <div class="card h-100">
+                                            <div class="image-scale-box">
+                                            <img src="./image/local_trip/local_trip_card_1_4.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <a href="#">
+                                            <div class="card-body">
+                                                <div class="badge-group">
+                                                <span class="badge text-bg-light section2-badge">패키지</span>
+                                                <span class="badge text-bg-light section2-badge">여행기간 3일</span>
+                                                </div>
+                                                <div class="card-text-box">
+                                                <h5>[제주자연힐링] 제주3일 #고품격여행 #자연힐링여행 #노팁/노쇼핑/노옵션 #ALL식사포함</h5>
+                                                <h5>599,000원~</h5>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-dark btn-more">상품 상세보기</a>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 mb-3">
+                                        <div class="card h-100">
+                                            <div class="image-scale-box">
+                                            <img src="./image/local_trip/local_trip_card_1_5.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <a href="#">
+                                            <div class="card-body">
+                                                <div class="badge-group">
+                                                <span class="badge text-bg-light section2-badge">패키지</span>
+                                                <span class="badge text-bg-light section2-badge">여행기간 3일</span>
+                                                </div>
+                                                <div class="card-text-box">
+                                                <h5>[스테디셀러] 제주 #우도단독버스투어 #제주핵심명소 #식사ALL포함 #섬여행</h5>
+                                                <h5>299,000원~</h5>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-dark btn-more">상품 상세보기</a>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 mb-3">
+                                        <div class="card h-100">
+                                            <div class="image-scale-box">
+                                            <img src="./image/local_trip/local_trip_card_1_1.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <a href="#">
+                                            <div class="card-body">
+                                                <div class="badge-group">
+                                                <span class="badge text-bg-light section2-badge">패키지</span>
+                                                <span class="badge text-bg-light section2-badge">여행기간 3일</span>
+                                                </div>
+                                                <div class="card-text-box">
+                                                    <h5>[제주완전정복] 제주 3일 #차귀도 섬탐방 #하늘연못 인생샷 #드라마촬영지 #환상숲</h5>
+                                                    <h5>499,000원~</h5>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-dark btn-more">상품 상세보기</a>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 비행기 애니메이션 -->
+        <!-- <div class="text_box">test</div> -->
+        <section class="air-section">
+            <div class="air-icon-box">
+                <img src="./image/favicon.png" class="air-icon mt-5" id="air-icon">
+            </div>
+        </section>
+        
+        <!-- 놓치면 후회할 국내여행 -->
+        <div class="container section2_box">
+            <div class="row section2_title">
+                <div class="col s2_t1">놓치면 후회할 국내여행</div>
+                <div class="col s2_t2">
+                    <a href="#">제주특가 BEST</a>
+                    <a href="#">스페셜특전! 족욕쿠폰증정</a>
+                    <a href="#">가보고싶은 섬</a>
+                    <a href="#">제주 시그니처</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <img src="image/local_trip/local_trip_card2_1.png" class="rounded" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="image/local_trip/local_trip_card2_2.png" class="rounded" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="image/local_trip/local_trip_card2_3.png" class="rounded" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="local_trip.js"></script>
 </body>
 </html>
-<script>
-    const myCarouselElement = document.querySelector('#carouselExampleIndicators')
-
-    // 슬라이드 이벤트
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 3000,     // 슬라이드 속도 지정
-    touch: false,
-    pause: "hover"      // hover 하면 슬라이드 재생 멈춤
-    })
-</script>
