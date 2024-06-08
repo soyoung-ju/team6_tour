@@ -103,6 +103,61 @@ a {
   margin-bottom: 150px;
 }
 
+.card-item {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin-right: 15px;
+}
+
+.image-box {
+} 
+
+.image-box img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+
+.prev, .next {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  background-color: #eee
+}
+
+.slick-arrow span {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.slick-arrow.prev {
+  position: absolute;
+  top: 27%;
+  z-index: 9;
+  left: -17px;
+}
+
+.slick-arrow.next {
+  position: absolute;
+  z-index: 9;
+  top: 27%;
+  right: -2px;
+}
+
+
+
+
+
+
+
+
+
 /* section  Team6 Tour 추천 상품 */
 .section4 {
   margin-bottom: 150px;
@@ -158,6 +213,9 @@ a {
   color: #fff;
 }
 
+/* @media (max-width: 480px) {
+  
+} */
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
@@ -195,4 +253,18 @@ a {
     margin: 0 auto;
     margin-bottom: 25px;
   }
+
+  /* section3 추천상품*/
+  .card-item {
+    margin-right: 0;
+  }
+  .slick-arrow.prev {
+  top: 35%;
+  left: 0px;
+}
+
+.slick-arrow.next {
+  top: 35%;
+  right: 0px;
+}
 }
