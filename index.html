@@ -1,105 +1,465 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>team6 tour</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>team6 tour</title>
 
-  <link rel="icon" href="./image/favicon.png" />
+    <link rel="icon" href="./image/favicon.png" />
 
-  <!-- CSS 초기화 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" /> 
+    <!-- CSS 초기화 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <script src="https://kit.fontawesome.com/6b9a64c649.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    
+    <link rel="stylesheet" href="/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6b9a64c649.js"
+      crossorigin="anonymous"
+    ></script>
+    
+
+  </head>
+
   
-  <link rel="stylesheet" href="/main.css" />
 
-</head>
+  
+  <body>
+    
+    <!-- HEADER -->
+    
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./image/team6_tour.png" alt="logo" width="220" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./overseas.html"
+                  >해외여행</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./local_trip.html">국내여행</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tour_pass.html">투어/패스</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">항공</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">호텔</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./image/team6_tour.png" alt="logo" width="220">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <!-- CAROUSEL SLIDES 1 -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/main/main_slide01.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>모두시그니처</h1>
+            <h1>모두가 선택한 프리미엄 여행</h1>
+            <p>#2023 소비자대상</p>
+            <p>#시그니처 #시그니처블랙</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/main/main_slide02.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>모두시그니처</h1>
+            <h1>모두가 선택한 프리미엄 여행</h1>
+            <p>#2023 소비자대상</p>
+            <p>#시그니처 #시그니처블랙</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/main/main_slide03.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>모두시그니처</h1>
+            <h1>모두가 선택한 프리미엄 여행</h1>
+            <p>#2023 소비자대상</p>
+            <p>#시그니처 #시그니처블랙</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./overseas.html">해외여행</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./local_trip.html">국내여행</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./tour_pass.html">투어/패스</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">항공</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">호텔</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </nav>
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./image/main_slide01.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>First slide label</h2>
-          <p>Some representative placeholder content for the first slide.</p>
+    <!-- CAROUSEL SLIDES 2 FADE -->
+    <!-- <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/main_slide01.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./image/main_slide02.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./image/main_slide03.png" class="d-block w-100" alt="..." />
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./image/main_slide02.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Second slide label</h2>
-          <p>Some representative placeholder content for the second slide.</p>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+
+
+
+    <!-- CIRCLE CARD -->
+
+    <div class="circle container pt-5 pb-5">
+      <div class="row container">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+          <div class="circle-card-body">
+            <img
+              src="./image/main/main_card_event_ebook.avif"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="circle-card-des">"최신 여행소식을 전해드려요~"</div>
+          </div>
+          <div class="circle-card-title text-center">
+            <p class="circle-card-text">E-BOOK 매거진</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./image/main_slide03.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Third slide label</h2>
-          <p>Some representative placeholder content for the third slide.</p>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+          <div class="circle-card-body">
+            <img
+              src="./image/main/main_card_event_hotel.avif"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="circle-card-des">"전 세계 호텔 5%할인 쿠폰 드려요~"</div>
+          </div>
+          <div class="circle-card-title text-center">
+            <p class="circle-card-text">호텔쿠폰</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+          <div class="circle-card-body">
+            <img
+              src="./image/main/main_card_event_coupon.avif"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="circle-card-des">"신규회원 누구나 발급해 드려요~"</div>
+          </div>
+          <div class="circle-card-title text-center">
+            <p class="circle-card-text">웰컴3종쿠폰</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+          <div class="circle-card-body">
+            <img
+              src="./image/main/main_card_event_asiana.avif"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="circle-card-des">"아시아나 마일리지로 여행가요~"</div>
+          </div>
+          <div class="circle-card-title text-center">
+            <p class="circle-card-text">마일리지</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+          <div class="circle-card-body">
+            <img
+              src="./image/main/main_card_event_movie.avif"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="circle-card-des">"<하이재킹> 기대평 이밴트에 참여해주세요~"</div>
+          </div>
+          <div class="circle-card-title text-center">
+            <p class="circle-card-text">이벤트</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+          <div class="circle-card-body">
+            <img
+              src="./image/main/main_card_event_taxfree.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="circle-card-des">"설레는 또다른 즐거움, 면세점혜택을 모았어요~"</div>
+          </div>
+          <div class="circle-card-title text-center">
+            <p class="circle-card-text">혜택모음</p>
+          </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  
-</body>
+
+
+    <!-- LIVE M -->
+
+    <div class="live container">
+      <div class="row container">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="./image/main/main_card_package_01.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="./image/main/main_card_package_01.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="./image/main/main_card_package_01.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <img src="./image/main/main_card_package_01.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- BANNER -->
+
+    <section class="banner">
+      <div class="inner container">
+        <div class="container-fluid">
+          <img src="./image/main/main_banner_play.png" class="play img-fluid" alt="play" />
+          <img src="./image/main/main_banner_tree.png" class="tree img-fluid" alt="tree" />
+          <img src="./image/main/main_banner_members_text.png" class="members img-fluid" alt="team members" />
+          <div class="airplane">
+            <span class="airplane-ment text-center light">Push airplane!</span>
+            <a href="javascript:void(0)">
+              <img src="./image/main/main_banner_airplane.png" class="airplane img-fluid" alt="airplane" />
+            </a>
+          </div>
+          <img src="./image/team6_tour.png" class="logo img-fluid" alt="logo" />
+        </div>
+      </div>  
+    </section>
+
+
+
+
+    <!-- FOTTER -->
+
+    <footer>
+      <div class="container">
+        <div class="row first-line pt-5 pb-3">
+          <div class="col-lg-6 col-md-12 col-sm-12 pb-4">
+              <div class="d-flex">
+                <div class="icon pe-4"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="icon pe-4"><i class="fa-brands fa-x-twitter b_icon"></i></div>
+                <div class="icon pe-4"><i class="fa-brands fa-instagram b_icon"></i></div>
+                <div class="icon pe-4"><i class="fa-brands fa-youtube b_icon"></i></div>
+                <div class="icon pe-4"><i class="fa-brands fa-spotify"></i></div>
+                <div class="icon pe-4"><i class="fa-brands fa-discord"></i></div>
+                <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                <div class="title">COMPANY</div>
+                <div class="menu"><a href="#">Fondazione Prada</a></div>
+                <div class="menu"><a href="#">Prada Group</a></div>
+                <div class="menu"><a href="#">Luna Rossa</a></div>
+                <div class="menu"><a href="#">Sustainability</a></div>
+                <div class="menu"><a href="#">Work with us</a></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+                <div class="title">LEGAL TERMS AND CONDITIONS</div>
+                <div class="menu"><a href="#">Legal Notice</a></div>
+                <div class="menu"><a href="#">Privacy Policy</a></div>
+                <div class="menu"><a href="#">Cookie Policy</a></div>
+                <div class="menu"><a href="#">Sitemap</a></div>
+            </div>
+        </div>
+        <div class="row second-line">
+          <div class="col-lg-3 col-md-12 pt-4 pb-4 second-line-menu title">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span><a href="#">STORE LOCATOR</a></span>
+          </div>
+          <div class="col-lg-6 col-md-12 pt-4 pb-4 second-line-menu title">
+            <span><i class="fa-solid fa-globe"></i></span>
+            <span><a href="#">LOCATION: REST OF THE WORLD</a></span>
+          </div>
+          <div class="col-lg-3 col-md-12 pt-4 pb-4 second-line-menu">©PRADA 2007 - 2024 | VAT n. 7330362708
+          </div>
+        </div>
+        <div class="third-line pt-4 pb-4">
+          <div class="row awards container d-flex">
+            <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+              <img src="./image/main/main_awards_01.png" height="32px" alt="" />
+            </div>
+            <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+              <img src="./image/main/main_awards_02.png" height="32px" alt="" />
+            </div>
+            <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+              <img src="./image/main/main_awards_03.png" height="32px" alt="" />
+            </div>
+            <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+              <img src="./image/main/main_awards_04.png" height="32px" alt="" />
+            </div>
+            <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+              <img src="./image/main/main_awards_05.png" height="32px" alt="" />
+            </div>
+            <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+              <img src="./image/main/maim_awards_06.png" height="32px" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+  </body>
 </html>
