@@ -38,6 +38,14 @@ a {
   margin-bottom: 15px;
 }
 
+.card-text-box span {
+  color: green;
+}
+
+.text-box span {
+  color: green;
+}
+
 .badge {
   border: 1px solid #bbb;
   margin-right: 5px;
@@ -199,27 +207,15 @@ nav.navbar {
   margin-bottom: 20px;
 }
 
-.section5-image-box {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section5-box-item {
-  width: 230px;
-  height: 230px;
+.section5 img {
   border-radius: 50%;
-  overflow: hidden;
-  background-color: #eee;
-  position: relative;
-  flex-shrink: 0;
 }
 
-.section5-box-item img {
-  width: 100%;
-  height: 100%;
+.section5 .card {
+  border: none;
 }
 
-.section5-box-item:before {
+.section5 .card:before {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
@@ -228,21 +224,17 @@ nav.navbar {
   height: 100%;
 }
 
-.section5-subtitle {
+.section5 .section5-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 230px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
   color: #fff;
+  font-size: 20px;
 }
 
-/* @media (max-width: 480px) {
-  
-} */
+
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
