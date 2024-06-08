@@ -17,11 +17,54 @@ a {
   
 .nav-link:hover {
     color: green;
-  }
+}
 
+.title {
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
 
+.sub-title {
+    color: #696969;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}
+*/
+
+.southeast-asia {
+    background-color: #F8F8F8;
+    padding: 10px 0;
+}
 
 /*
+.special-exhibition .card:hover {
+    transform: scale(1.02);
+    transition: 0.5s ease-in-out;
+}
+*/
+
+.text-center {
+    text-align: center;
+}
+
+
+.rounded-card {
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+
+
+
+
+
+  
+/* 이미지 슬라이더 
 .container {
     width: 100%;
     transition: transform 0.5s;
