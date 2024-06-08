@@ -4,12 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
+/* @font-face {
   font-family: 'OTWelcomeRA';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
+} */
 @font-face {
   font-family: 'Cafe24Syongsyong';
   src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
@@ -21,7 +21,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 a{
@@ -34,11 +34,9 @@ a{
 header {
   width: 100%;
   background-color: #f6f5f0;
-  border-bottom: 1px solid #c8c8c8;
   position: fixed;
   top:0;
   z-index: 9;
-  font-family: 'OTWelcomeRA';
 }
 
 nav.navbar {
@@ -85,7 +83,7 @@ nav.navbar {
 }
 
 .circle-card-text {
-  font-family: 'OTWelcomeRA';
+  font-weight: 700;
   margin-top: 20px;
 }
 
@@ -102,7 +100,16 @@ nav.navbar {
   transition: all .5s;
 }
 
+
+
+
+
+
 /* LIVE M : CARD*/
+.live {
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -116,7 +123,7 @@ nav.navbar {
   background-position: center;
 }
 .banner .inner {
-  height: 700px;
+  height: 710px;
   position: relative; 
 }
 .banner .play.img-fluid {
@@ -224,6 +231,7 @@ footer .title {
 }
 .second-line {
   border-top: 1px solid #d9dce0;
+  border-bottom: 1px solid #d9dce0;
   font-size: 10px;
 }
 
@@ -234,4 +242,15 @@ footer .title {
   .second-line-menu {
     border-bottom: 1px solid #d9dce0;
   }
+}
+
+.third-line {
+  display: flex;
+  justify-content: center;
+}
+.award {
+  justify-content: center;
+}
+.awards-img {
+  text-align: center;
 }
