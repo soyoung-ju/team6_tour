@@ -10,7 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Cafe24Syongsyong';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: #333;
   font-size: 16px;
@@ -39,9 +44,6 @@ nav.navbar {
 .navbar {
   height: 70px;
 }
-.container-fluid {
- 
-}
 
 .nav-link {
   font-weight: 700;
@@ -62,38 +64,136 @@ nav.navbar {
 
 
 
-.card {
+.circle-card {
   border: 0;
 }
 
-.card .card-body {
+.circle-card .circle-card-body {
   position: relative;
 }
-.card-des {
+.circle-card-des {
   position: absolute;
-  top: 35%;
+  top: 30%;
+  padding: 10px;
   opacity: 0;
   color: #fff;
   text-align: center;
+  font-family: 'Cafe24Syongsyong';
+  font-size: 24px;
 }
 
-.card .card-body .card-title {
-  
-}
 
-.card-text {
+.circle-card-text {
   font-family: 'OTWelcomeRA';
+  margin-top: 20px;
 }
 
-.card img {
+.circle-card img {
   filter: brightness(1);
 }
-.card img:hover {
+.circle-card img:hover {
   transform: scale(1.2);             
   transition: transform .3s;
   filter: brightness(0.5);
 }
-.card img:hover + .card-des {
+.circle-card img:hover + .circle-card-des {
   opacity: 1;
   transition: all .5s;
+}
+
+/* banner */
+.banner {
+  margin-top: 120px;
+  background-image: url("./image/main/main_banner_bg.png");
+  background-position: center;
+}
+.banner .inner {
+  height: 700px;
+  position: relative; 
+}
+.banner .play.img-fluid {
+  position:absolute;
+  height: 100px;
+  top:48%;
+}
+
+.banner .tree.img-fluid {
+  position: absolute;
+  bottom: 280px;
+  right: 0px;
+  width: 400px;
+}
+
+.banner .members.img-fluid {
+  position: absolute;
+  width: 450px;
+  bottom: 100px;
+  right: 0px;
+}
+
+.banner .airplane {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 100px;
+}
+
+.banner .airplane-ment {
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'TTHakgyoansimKossuyeomR';
+  opacity: 1;
+}
+
+.banner .airplane.img-fluid:hover {
+  rotate: 10deg;
+}
+
+
+.banner .airplane.img-fluid:active {
+  transform: scale(10) 
+  translate(-1320px, -700px)
+  rotate(-45deg)
+  ; 
+  transition: all 5s;
+  opacity: 0;
+}
+
+
+.banner .logo.img-fluid {
+  position: absolute;
+  height: 40px;
+  bottom: 50px;
+  left: 30px;
+}
+
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .title {
+  font-size: 12px;
+  font-weight: 700;
+}
+.second-line {
+  border-top: 1px solid #d9dce0;
+  font-size: 10px;
+}
+
+.row.third-line {
+
+}
+
+@media screen and (max-width:96rem) {
+  .second-line {
+    text-align: center;
+  }
+  .second-line-menu {
+    border-bottom: 1px solid #d9dce0;
+  }
 }
