@@ -52,6 +52,10 @@ a {
   width: 100%;
 }
 
+/* 배너 */
+.banner {
+  margin-bottom: 150px;
+}
 
 /* section 1 캐러셀 */
 .carousel {
@@ -152,12 +156,6 @@ a {
 
 
 
-
-
-
-
-
-
 /* section  Team6 Tour 추천 상품 */
 .section4 {
   margin-bottom: 150px;
@@ -219,6 +217,10 @@ a {
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
+
+  .banner {
+    display: none;
+  }
   
   .card {
     margin-bottom: 10px;
