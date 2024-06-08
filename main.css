@@ -28,6 +28,9 @@ a{
   text-decoration: none;
 }
 
+
+/* HEAEDR */
+
 header {
   width: 100%;
   background-color: #f6f5f0;
@@ -56,18 +59,17 @@ nav.navbar {
   background-color: #f6f5f0;
 }
 
-
-
 .carousel-caption {
   font-family: 'TTHakgyoansimKossuyeomR';
 }
 
 
 
+/* CIRCLE CARD */
+
 .circle-card {
   border: 0;
 }
-
 .circle-card .circle-card-body {
   position: relative;
 }
@@ -81,7 +83,6 @@ nav.navbar {
   font-family: 'Cafe24Syongsyong';
   font-size: 24px;
 }
-
 
 .circle-card-text {
   font-family: 'OTWelcomeRA';
@@ -101,7 +102,14 @@ nav.navbar {
   transition: all .5s;
 }
 
-/* banner */
+/* LIVE M : CARD*/
+
+
+
+
+
+
+/* BANNER */
 .banner {
   margin-top: 120px;
   background-image: url("./image/main/main_banner_bg.png");
@@ -152,7 +160,6 @@ nav.navbar {
   rotate: 10deg;
 }
 
-
 .banner .airplane.img-fluid:active {
   transform: scale(10) 
   translate(-1320px, -700px)
@@ -162,7 +169,6 @@ nav.navbar {
   opacity: 0;
 }
 
-
 .banner .logo.img-fluid {
   position: absolute;
   height: 40px;
@@ -170,6 +176,42 @@ nav.navbar {
   left: 30px;
 }
 
+.airplane span:not(.light) {
+  opacity: 0;
+  animation: flashText .5s ease-out alternate infinite;
+}
+
+span.light {
+  position: relative;
+  display: inline-block;
+  
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    height: 120%;
+    background: tomato;
+    filter: blur(10px);
+    content: "";
+    opacity: 0;
+    animation: flash .5s ease-out alternate infinite;
+  }}
+
+@keyframes flash{
+  to {
+    opacity: .5;
+  }}
+
+@keyframes flashText {
+  to {
+    opacity: 0.15;
+  }}
+
+
+
+
+/* FOOTER */
 
 footer a {
   text-decoration: none;
@@ -183,10 +225,6 @@ footer .title {
 .second-line {
   border-top: 1px solid #d9dce0;
   font-size: 10px;
-}
-
-.row.third-line {
-
 }
 
 @media screen and (max-width:96rem) {
