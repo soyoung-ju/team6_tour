@@ -4,18 +4,19 @@
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: 'OTWelcomeRA';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-} */
 @font-face {
   font-family: 'Cafe24Syongsyong';
   src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: #333;
   font-size: 16px;
@@ -24,8 +25,25 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-a{
-  text-decoration: none;
+section {
+  margin-top: 150px;
+}
+
+section h6 {
+  color: gray;
+  font-weight: 400;
+}
+
+.image-scale-box {
+  overflow: hidden;
+}
+
+.image-scale-box img {
+  transition: all 400ms;
+}
+
+.image-scale-box img:hover {
+  transform: scale(1.05);
 }
 
 
@@ -42,29 +60,90 @@ header {
 nav.navbar {
   background-color: #f6f5f0 !important;
 }
-.navbar {
-  height: 70px;
-}
 
 .nav-link {
-  font-weight: 700;
+  font-weight: 500;
 }
 .nav-link:hover {
-  color: green;
+  color: #4d8252;
 }
 
 .form-control {
   background-color: #f6f5f0;
 }
+.btn-search {
+  text-wrap: nowrap;
+  border-color: #4d8252;
+  color:#4d8252;
+}
+.btn-search:hover {
+  background-color: #4d8252;
+  border-color: #4d8252;
+}
+.green {
+  color: #4d8252;
+}
+.black {
+  color: #333;
+}
+.text-shadow {
+  text-shadow: 1px 1px 15px rgba(77,130,82, 0.4);
+}
+
+.carousel.slide {
+  padding-top: 67px;
+}
 
 .carousel-caption {
+  position: absolute;
+  top: 8rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
   font-family: 'TTHakgyoansimKossuyeomR';
 }
 
 
 
+
+/* MD */
+
+.md-body {
+  position: relative;
+}
+
+.md-body img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.md-text-box {
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px gray;
+  position: absolute;
+  right: 0;
+  bottom: -4.5rem;
+  border-radius: 10px 10px 0px 10px;
+  padding: 0.5rem;
+}
+.md-price {
+  text-align: right;
+  font-weight: 700;
+}
+.md-small-text {
+  font-size: 16px;
+  color: gray;
+}
+
+
 /* CIRCLE CARD */
 
+.circle {
+  width: 100%;
+  background-color: #F8F4E1;
+}
 .circle-card {
   border: 0;
 }
@@ -73,7 +152,7 @@ nav.navbar {
 }
 .circle-card-des {
   position: absolute;
-  top: 30%;
+  top: 25%;
   padding: 10px;
   opacity: 0;
   color: #fff;
@@ -81,21 +160,25 @@ nav.navbar {
   font-family: 'Cafe24Syongsyong';
   font-size: 24px;
 }
-
 .circle-card-text {
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 20px;
 }
 
 .circle-card img {
   filter: brightness(1);
 }
-.circle-card img:hover {
+
+.circle-card-body {
+  cursor: pointer;
+}
+
+.circle-card-body:hover img {
   transform: scale(1.2);             
   transition: transform .3s;
   filter: brightness(0.5);
 }
-.circle-card img:hover + .circle-card-des {
+.circle-card-body:hover img + .circle-card-des {
   opacity: 1;
   transition: all .5s;
 }
@@ -106,15 +189,21 @@ nav.navbar {
 
 
 /* LIVE M : CARD*/
-.live {
-  display: flex;
-  justify-content: center;
+.live .card {
+  border: 0;
+  border-radius: 15px;
 }
 
-
-
-
-
+.live .card .card-body {
+  padding: 15px 0px;
+}
+.btn-main {
+  width: 30%;
+}
+.card-text {
+  color: gray;
+  font-weight: 300;
+}
 
 /* BANNER */
 .banner {
@@ -191,19 +280,20 @@ nav.navbar {
 span.light {
   position: relative;
   display: inline-block;
-  
-  &:before {
-    position: absolute;
-    left: 0;
-    top: -10%;
-    width: 100%;
-    height: 120%;
-    background: tomato;
-    filter: blur(10px);
-    content: "";
-    opacity: 0;
-    animation: flash .5s ease-out alternate infinite;
-  }}
+}
+
+span.light:before {
+  position: absolute;
+  left: 0;
+  top: -10%;
+  width: 100%;
+  height: 120%;
+  background: tomato;
+  filter: blur(10px);
+  content: "";
+  opacity: 0;
+  animation: flash 0.5s ease-out alternate infinite;
+}
 
 @keyframes flash{
   to {
@@ -253,4 +343,21 @@ footer .title {
 }
 .awards-img {
   text-align: center;
+}
+
+@media screen and (max-width:991px) {
+  section {
+    margin-top: 80px;
+  }
+  .btn-main {
+    width: 60%;
+  }
+  .circle-card-des {
+    top:30%
+  }
+}
+@media screen and (max-width:576px) {
+  section {
+    margin-top: 50px;
+  }
 }
