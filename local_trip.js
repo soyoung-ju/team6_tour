@@ -12,7 +12,6 @@
         pause: "hover"      // hover 하면 슬라이드 재생 멈춤
     })
 
-
     // 비행기 애니메이션 스크롤 이벤트
     let air_icon = document.querySelector(".air_icon")
     
@@ -26,7 +25,6 @@
             air_icon.style.animation = "air-slide 3s ease-out"
         }
     })
-
     // 모바일 
     $("#mobile_tab1").click(function() {
         $("#mobile_box1").show();
@@ -111,8 +109,6 @@
     })
 
     $( document ).ready(function() {
-        $("#air_icon_left").hide();
-
         $("#card_a1").addClass('underline');
         $("#card2_box_2").hide();
         $("#card2_box_3").hide();
