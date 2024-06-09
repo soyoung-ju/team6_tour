@@ -1,9 +1,10 @@
 body {
+    margin: 0;
     color: #333;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .green {
@@ -35,58 +36,41 @@ nav.navbar {
     background-color: #f6f5f0;
 }
 
-.btn-search {
-    text-wrap: nowrap;
-    border-color: #4d8252;
-    color:#4d8252;
+.title {
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
 }
-
-.btn-search:hover {
-    background-color: #4d8252;
-    border-color: #4d8252;
-}  
-
-
 
 .sub-title {
     color: #696969;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-/* 테마여행 */
-.rounded-card {
-    border-radius: 50%; 
-    overflow: hidden; 
-    width: 100%; 
-    padding-top: 100%; 
-    position: relative; 
+
+/* 여행일정 검색 */
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
-.theme-travel-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+label {
+    margin-right: 5px;
 }
 
-.theme-travel-card .card-text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    width: 100%;
-    border-radius: 50%; 
-    overflow: hidden; 
-    text-shadow: 1px 1px 2px black;
+select {
+    height: 40px;
 }
 
-.theme-travel-card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+.search-btn {
+    padding: 0 33px;
+    height: 40px;
 }
+
 
 /* best상품 */
 .best-item .card-img-top:hover {
@@ -178,26 +162,4 @@ footer .title {
         display: none;
     }
 }
-
-
-
-
-  
-/* 이미지 슬라이더 
-.container {
-    width: 100%;
-    transition: transform 0.5s;
-    overflow: hidden;
-}
-
-.inner {
-    width: 100%;
-    float: left;
-}
-
-.inner img {
-    width: 100%;
-    float: left;
-}
-*/
 
