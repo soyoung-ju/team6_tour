@@ -235,6 +235,22 @@ nav.navbar {
 }
 
 
+/* FOOTER */
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .title {
+  font-size: 12px;
+  font-weight: 700;
+}
+.second-line {
+  border-top: 1px solid #d9dce0;
+  border-bottom: 1px solid #d9dce0;
+  font-size: 10px;
+}
+
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
