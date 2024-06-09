@@ -28,6 +28,7 @@ background-color: #4d8252;
 border-color: #4d8252;
 }
 
+
 /* 푸터 */
 footer a {
     text-decoration: none;
@@ -76,17 +77,6 @@ body {
     overflow-x: hidden;
 }
 
-a:hover {  
-    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
-}
-span:hover{
-    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
-}
-
-html:hover{
-    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
-}
-
 .image-scale-box img :hover {
     transform: scale(1.05);
 }
@@ -104,6 +94,22 @@ a{
 }
 
 
+
+/* 비행기 hover */
+a:hover {  
+    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+span:hover{
+    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+html:hover{
+    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+
+
+
 /* 카드_1 */
 .card_box{
     margin-top: 100px;
@@ -119,6 +125,7 @@ a{
     margin-top: 30px;   
 }
 
+
 /* 모바일 */
 .mobile_tab{
     margin: 1em;
@@ -129,6 +136,7 @@ a{
 }
 
 
+
 /* 비행기 애니메이션 */
 .air-section{
     width: 100%;
@@ -136,16 +144,11 @@ a{
     background-color: #f6f5f0;
     margin: 150px 0px;
 }
-.air_icon_right{
+.air_icon{
     width: 100px;
     animation: air-slide ease-out;
     animation-duration: 3s;
 }
-/* .air_icon_left{
-    width: 100px;
-    animation: air-slide ease-out;
-    animation-duration: 3s;
-}  */
 
 @keyframes air-slide {
     from{
@@ -207,6 +210,7 @@ a{
     transition: transform .3s;
     filter: brightness(0.5);
     opacity: 1;
+    overflow:hidden
 }
 
 @media screen and (min-width: 0px) {
