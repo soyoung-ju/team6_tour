@@ -14,16 +14,16 @@
 
 
     // 비행기 애니메이션 스크롤 이벤트
-    let air_icon_right = document.querySelector(".air_icon_right")
-    // let air_icon_left = document.querySelector(".air_icon_left")
+    let air_icon = document.querySelector(".air_icon")
+    
     window.addEventListener('scroll', function(){
         let value = window.scrollY
         console.log(value);
 
         if(value<900){
-            air_icon_right.style.animation = "air-disappear 3s ease-out forwards"
+            air_icon.style.animation = "air-disappear 3s ease-out forwards"
         } else{
-            air_icon_right.style.animation = "air-slide 3s ease-out"
+            air_icon.style.animation = "air-slide 3s ease-out"
         }
     })
 
@@ -111,6 +111,8 @@
     })
 
     $( document ).ready(function() {
+        $("#air_icon_left").hide();
+
         $("#card_a1").addClass('underline');
         $("#card2_box_2").hide();
         $("#card2_box_3").hide();
