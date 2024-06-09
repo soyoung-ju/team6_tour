@@ -4,6 +4,17 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+a:hover {  
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+span:hover{
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+html:hover{
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
 /* 공통 클래스 */
 a {
   text-decoration: none;
@@ -77,6 +88,10 @@ nav.navbar {
   font-weight: 500;
 }
 .nav-link:hover {
+  color: #4d8252;
+}
+
+.green {
   color: #4d8252;
 }
 
