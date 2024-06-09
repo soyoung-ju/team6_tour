@@ -4,6 +4,17 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+a:hover {  
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+span:hover{
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+html:hover{
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
 /* 공통 클래스 */
 a {
   text-decoration: none;
@@ -38,6 +49,14 @@ a {
   margin-bottom: 15px;
 }
 
+.card-text-box span {
+  color: green;
+}
+
+.text-box span {
+  color: green;
+}
+
 .badge {
   border: 1px solid #bbb;
   margin-right: 5px;
@@ -51,6 +70,44 @@ a {
 .btn-more {
   width: 100%;
 }
+
+/* HEAEDR */
+header {
+  width: 100%;
+  background-color: #f6f5f0;
+  position: fixed;
+  top:0;
+  z-index: 9;
+}
+
+nav.navbar {
+  background-color: #f6f5f0 !important;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #4d8252;
+}
+
+.green {
+  color: #4d8252;
+}
+
+.form-control {
+  background-color: #f6f5f0;
+}
+.btn-search {
+  text-wrap: nowrap;
+  border-color: #4d8252;
+  color:#4d8252;
+}
+.btn-search:hover {
+  background-color: #4d8252;
+  border-color: #4d8252;
+}
+
 
 /* section 1 캐러셀 */
 .carousel {
@@ -165,27 +222,15 @@ a {
   margin-bottom: 20px;
 }
 
-.section5-image-box {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section5-box-item {
-  width: 230px;
-  height: 230px;
+.section5 img {
   border-radius: 50%;
-  overflow: hidden;
-  background-color: #eee;
-  position: relative;
-  flex-shrink: 0;
 }
 
-.section5-box-item img {
-  width: 100%;
-  height: 100%;
+.section5 .card {
+  border: none;
 }
 
-.section5-box-item:before {
+.section5 .card:before {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
@@ -194,21 +239,54 @@ a {
   height: 100%;
 }
 
-.section5-subtitle {
+.section5 .section5-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 230px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
   color: #fff;
+  font-size: 20px;
 }
 
-/* @media (max-width: 480px) {
-  
-} */
+
+/* FOOTER */
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .title {
+  font-size: 12px;
+  font-weight: 700;
+}
+.second-line {
+  border-top: 1px solid #d9dce0;
+  border-bottom: 1px solid #d9dce0;
+  font-size: 10px;
+}
+
+.third-line {
+  display: flex;
+  justify-content: center;
+}
+.award {
+  justify-content: center;
+}
+.awards-img {
+  text-align: center;
+}
+
+@media screen and (max-width:96rem) {
+  .second-line {
+    text-align: center;
+  }
+  .second-line-menu {
+    border-bottom: 1px solid #d9dce0;
+  }
+}
+
+
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
