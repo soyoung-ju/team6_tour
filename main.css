@@ -31,6 +31,7 @@ section {
 
 section h6 {
   color: gray;
+  font-weight: 400;
 }
 
 .image-scale-box {
@@ -61,23 +62,51 @@ nav.navbar {
 }
 
 .nav-link {
-  font-weight: 700;
+  font-weight: 500;
 }
 .nav-link:hover {
-  color: green;
+  color: #4d8252;
 }
 
 .form-control {
   background-color: #f6f5f0;
 }
-
+.btn-search {
+  text-wrap: nowrap;
+  border-color: #4d8252;
+  color:#4d8252;
+}
+.btn-search:hover {
+  background-color: #4d8252;
+  border-color: #4d8252;
+}
+.green {
+  color: #4d8252;
+}
+.black {
+  color: #333;
+}
+.text-shadow {
+  text-shadow: 1px 1px 15px rgba(77,130,82, 0.4);
+}
 
 .carousel.slide {
   padding-top: 67px;
 }
+
 .carousel-caption {
+  position: absolute;
+  top: 8rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
   font-family: 'TTHakgyoansimKossuyeomR';
 }
+
+
+
+
 
 /* CIRCLE CARD */
 
@@ -93,7 +122,7 @@ nav.navbar {
 }
 .circle-card-des {
   position: absolute;
-  top: 30%;
+  top: 25%;
   padding: 10px;
   opacity: 0;
   color: #fff;
@@ -101,32 +130,25 @@ nav.navbar {
   font-family: 'Cafe24Syongsyong';
   font-size: 24px;
 }
-
-.carousel-caption {
-  position: absolute;
-
-  top: 8rem;
-
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  color: #fff;
-  text-align: center;
-}
-
 .circle-card-text {
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 20px;
 }
 
 .circle-card img {
   filter: brightness(1);
 }
-.circle-card img:hover {
+
+.circle-card-body {
+  cursor: pointer;
+}
+
+.circle-card-body:hover img {
   transform: scale(1.2);             
   transition: transform .3s;
   filter: brightness(0.5);
 }
-.circle-card img:hover + .circle-card-des {
+.circle-card-body:hover img + .circle-card-des {
   opacity: 1;
   transition: all .5s;
 }
@@ -143,9 +165,15 @@ nav.navbar {
 }
 
 .live .card .card-body {
-  padding-top: 10px;
+  padding: 15px 0px;
 }
-
+.btn-main {
+  width: 30%;
+}
+.card-text {
+  color: gray;
+  font-weight: 300;
+}
 
 /* BANNER */
 .banner {
@@ -285,4 +313,21 @@ footer .title {
 }
 .awards-img {
   text-align: center;
+}
+
+@media screen and (max-width:991px) {
+  section {
+    margin-top: 80px;
+  }
+  .btn-main {
+    width: 60%;
+  }
+  .circle-card-des {
+    top:30%
+  }
+}
+@media screen and (max-width:576px) {
+  section {
+    margin-top: 50px;
+  }
 }
