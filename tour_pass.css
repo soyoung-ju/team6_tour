@@ -251,6 +251,27 @@ footer .title {
   font-size: 10px;
 }
 
+.third-line {
+  display: flex;
+  justify-content: center;
+}
+.award {
+  justify-content: center;
+}
+.awards-img {
+  text-align: center;
+}
+
+@media screen and (max-width:96rem) {
+  .second-line {
+    text-align: center;
+  }
+  .second-line-menu {
+    border-bottom: 1px solid #d9dce0;
+  }
+}
+
+
 
 /* 모바일 ------------------------------*/
 @media (max-width: 48rem) {
