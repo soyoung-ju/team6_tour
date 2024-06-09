@@ -1,10 +1,543 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>team6 tour</title>
+
+    <link rel="icon" href="./image/favicon.png" />
+
+    <!-- CSS 초기화 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6b9a64c649.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <div id="header"></div>
+
+    <!-- CAROUSEL SLIDES 1 -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./image/main/main_slide01.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="green">Team6시그니처</h1>
+            <h1 class="text-shadow">모두가 선택한 프리미엄 여행</h1>
+            <p class="text-shadow">#2023 소비자대상</p>
+            <p class="text-shadow">#시그니처 #시그니처블랙</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./image/main/main_slide02.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="green">서유럽 낭만 여행</h1>
+            <h1 class="text-shadow">추천상품을 만나보세요</h1>
+            <p class="text-shadow">#프랑스 #영국 #스위스 #이탈리아</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./image/main/main_slide03.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="green">여행물가 확! 내려주는</h1>
+            <h1 class="text-shadow">휴양 베스트셀러 괌!</h1>
+            <p class="text-shadow">패키지부터 에어텔까지</p>
+            <p class="text-shadow">동반아동 혜택은 덤!</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <section class="container">
+      <div class="row">
+        <div class="col text-center section-title-box mb-5">
+          <h2><span class="green">TEAM6</span>MD 추천</h2>
+          <h6>여기는 가봐야지~ 인기호텔을 소개합니다!</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-12 mb-5">
+          <div class="md-body">
+            <img src="https://img.modetour.com/eagle/photoimg/67722/rfile/637709435808799857.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y" alt="">
+            <div class="md-text-box p-3 mb-5 h-60">
+              <h5 class="pb-3">투몬비치 아이와 함께 하기 좋은</h5>
+              <p>두짓비치 리조트, 괌 | 타자 워터파크 부근에 위치 </p>
+              <h5 class="md-price green">308,090<span class="md-small-text">원~</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 p-3 mb-5 mb-5">
+          <div class="md-body">
+            <img src="https://img.modetour.com/eagle/photoimg/58390/rfile/636652852768806155.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y" alt="">
+            <div class="md-text-box p-3 mb-5 h-60">
+              <h5 class="pb-3">요즘 핫한 베트남 리조트</h5>
+              <p>인터컨티넨탈 푸꾸옥 롱비치리조트, IHG 호텔 | 소나시아 비치 부근에 위치</p>
+              <h5 class="md-price green">279,860<span class="md-small-text">원~</span></h5>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+    </section>
+
+
+
+
+
+    <!-- CIRCLE CARD -->
+
+    <section class="circle">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center section-title-box pt-5 mb-5">
+            <h2>지금 <span class="green">TEAM6</span>에서는</h2>
+            <h6>다양한 서비스가 준비되어 있어요!</h6>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+            <div class="circle-card-body">
+              <img
+                src="./image/main/main_card_event_ebook.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="circle-card-des">"최신 여행소식을 전해드려요~"</div>
+            </div>
+            <div class="circle-card-title text-center">
+              <p class="circle-card-text">E-BOOK 매거진</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+            <div class="circle-card-body">
+              <img
+                src="./image/main/main_card_event_hotel.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="circle-card-des">
+                "전 세계 호텔 5%할인 쿠폰 드려요~"
+              </div>
+            </div>
+            <div class="circle-card-title text-center">
+              <p class="circle-card-text">호텔쿠폰</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+            <div class="circle-card-body">
+              <img
+                src="./image/main/main_card_event_coupon.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="circle-card-des">"신규회원 누구나 발급해 드려요~"</div>
+            </div>
+            <div class="circle-card-title text-center">
+              <p class="circle-card-text">웰컴3종쿠폰</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+            <div class="circle-card-body">
+              <img
+                src="./image/main/main_card_event_asiana.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="circle-card-des">"아시아나 마일리지로 여행가요~"</div>
+            </div>
+            <div class="circle-card-title text-center">
+              <p class="circle-card-text">마일리지</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+            <div class="circle-card-body">
+              <img
+                src="./image/main/main_card_event_movie.avif"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="circle-card-des">
+                "<하이재킹> 기대평 이밴트에 참여해주세요~"
+              </div>
+            </div>
+            <div class="circle-card-title text-center">
+              <p class="circle-card-text">이벤트</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb-5 circle-card">
+            <div class="circle-card-body">
+              <img
+                src="./image/main/main_card_event_taxfree.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="circle-card-des">
+                "설레는 또다른 즐거움, 면세점혜택을 모았어요~"
+              </div>
+            </div>
+            <div class="circle-card-title text-center">
+              <p class="circle-card-text">혜택모음</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- LIVE M -->
+
+    <section class="container">
+      <div class="row">
+        <div class="col text-center section-title-box mb-5">
+          <h2><span class="green">TEAM6</span> LIVE M</h2>
+          <h6>Team6의 생생한 LIVE방송을 즐겨보세요!</h6>
+        </div>
+      </div>
+
+      <div class="row live">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/c9b6591c263c4fde98a823cc6c3ea850.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">두바이/아부다비 퍼펙트일주</h5>
+              <p class="card-text">
+                #두바이 #트립어드바이져
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/047fc33377c649ebb2b196ffffdfec87.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">서유럽 한나라 일주</h5>
+              <p class="card-text">
+                #서유럽 #영국 #프랑스 #스위스 #이태리 #독일
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/cd0ffa628fc245e6abbfd726a903ee0b.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">보라카이, 다시 만나 반갑다!</h5>
+              <p class="card-text">
+                #보라카이
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100 image-scale-box ">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/7cc8b0c8efd74028874ea499e95d301a.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">색다른 태국 치앙라이&치앙마이</h5>
+              <p class="card-text">
+                #태국 #치앙라이 #치앙마이
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row live">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/a5b964b7b98d40139770a413b58ee8f6.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">뭐든지 多 되는 태국 골프</h5>
+              <p class="card-text">
+                #골프 #원정골프 #생애첫해외골프
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/f961872f6a844c07a3665e55c9c6239c.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">소소하지 않은 소도시 JAPAN 여행</h5>
+              <p class="card-text">
+                #일본소도시
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/482f349c0be94659bbb1a2f77b49a1ad.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">튀르키예 일주 9일</h5>
+              <p class="card-text">
+                #튀르키예 #10대특식 #전일정5성 #온천호텔
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/5f2293a1ff8043b3852ab401194ae866.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">라스베가스 호텔</h5>
+              <p class="card-text">
+                #라스베가스
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row live">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/d9389c42366b45bb9bffbdda7ca7febc.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">밤에도 낮에도 아름다운 도시 홍콩</h5>
+              <p class="card-text">
+                #홍콩 #인기호텔 #홍콩호텔
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/899a8fdddeb84633a87f6434c13acddb.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">동유럽&크로아티아 슬로베니아</h5>
+              <p class="card-text">
+                #오스트리아 #짤쯔부르크 #할슈타트 #프라하 #부다페스트
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/8165318c8ad445b1a3f07d74087e699b.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">하와이는 언제나 허니문</h5>
+              <p class="card-text">
+                #하와이 #허니문
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+          <div class="card image-scale-box h-100">
+            <img
+              src="https://img.modetour.com/eagle/photoimg/d3e9cbee3fee42a58c63711a3c3d7ac2.png?resize=y&resize_w=384&resize_h=229&w_h_fill=y"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">NEW & NOW NEW YORK CITY</h5>
+              <p class="card-text">
+                #뉴욕 #특별한제안
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center mb-5">
+          <a href="#" class="btn btn-success btn-main">방송모두보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+
+    <section class="banner">
+      <div class="inner container">
+        <div class="container-fluid">
+          <img
+            src="./image/main/main_banner_play.png"
+            class="play img-fluid"
+            alt="play"
+          />
+          <img
+            src="./image/main/main_banner_tree.png"
+            class="tree img-fluid"
+            alt="tree"
+          />
+          <img
+            src="./image/main/main_banner_members_text.png"
+            class="members img-fluid"
+            alt="team members"
+          />
+          <div class="airplane">
+            <span class="airplane-ment text-center light">Push airplane!</span>
+            <a href="javascript:void(0)">
+              <img
+                src="./image/main/main_banner_airplane.png"
+                class="airplane img-fluid"
+                alt="airplane"
+              />
+            </a>
+          </div>
+          <img src="./image/team6_tour.png" class="logo img-fluid" alt="logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOTTER -->
+
+    <div id="footer"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+
+  </body>
 </html>
+
+<script>
+  $(function(){
+      $("#header").load("header.html")
+      $("#footer").load("footer.html")
+  })
+</script>

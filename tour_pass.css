@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a:hover {  
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+span:hover{
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+html:hover{
+  cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+/* 공통 클래스 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-title-box {
+  margin-bottom: 20px;
+}
+
+.section-title-box h2 {
+  margin-bottom: 10px;
+}
+
+.section-title-box h6 {
+  color: gray;
+}
+
+.image-scale-box {
+  overflow: hidden;
+}
+
+.image-scale-box img {
+  transition: all 400ms;
+}
+
+.image-scale-box img:hover {
+  transform: scale(1.05);
+}
+
+.card-text-box {
+  margin-bottom: 15px;
+}
+
+.card-text-box span {
+  color: green;
+}
+
+.text-box span {
+  color: green;
+}
+
+.badge {
+  border: 1px solid #bbb;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.badge-group {
+  margin-bottom: 10px;
+}
+
+.btn-more {
+  width: 100%;
+}
+
+/* HEAEDR */
+header {
+  width: 100%;
+  background-color: #f6f5f0;
+  position: fixed;
+  top:0;
+  z-index: 9;
+}
+
+nav.navbar {
+  background-color: #f6f5f0 !important;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #4d8252;
+}
+
+.green {
+  color: #4d8252;
+}
+
+.form-control {
+  background-color: #f6f5f0;
+}
+.btn-search {
+  text-wrap: nowrap;
+  border-color: #4d8252;
+  color:#4d8252;
+}
+.btn-search:hover {
+  background-color: #4d8252;
+  border-color: #4d8252;
+}
+
+
+/* section 1 캐러셀 */
+.carousel {
+  margin-bottom: 150px;
+}
+
+.carousel-item-box {
+  position: relative;
+}
+
+.carousel-text-box {
+  position: absolute;
+  top: 32%;
+  left: 15%;
+}
+
+.carousel-title {
+  margin-bottom: 13px;
+  font-size: 50px;
+  font-weight: 700;
+} 
+
+.carousel-subtitle {
+  font-weight: 700;
+  margin-bottom: -3px;
+}
+
+.carousel-description {
+  margin: 0;
+}
+
+.carousel-text-box.text-white {
+  color: #fff;
+} 
+
+.carousel-item:last-child .carousel-text-box {
+  text-shadow: 1px 1px 5px black;
+}
+
+
+/* section 2 특가할인 */
+.section2 {
+  margin-bottom: 150px;
+}
+
+
+/* section 3 Team6 Tour 추천 상품 */
+.section3 {
+  margin-bottom: 150px;
+}
+
+.card-item {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin-right: 15px;
+}
+
+.image-box {
+} 
+
+.image-box img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+
+.prev, .next {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  background-color: #eee
+}
+
+.slick-arrow span {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.slick-arrow.prev {
+  position: absolute;
+  top: 27%;
+  z-index: 9;
+  left: -17px;
+}
+
+.slick-arrow.next {
+  position: absolute;
+  z-index: 9;
+  top: 27%;
+  right: -2px;
+}
+
+
+
+/* section  Team6 Tour 추천 상품 */
+.section4 {
+  margin-bottom: 150px;
+}
+
+/* section 5 테마 여행*/
+.section5 {
+  margin-bottom: 150px;
+}
+
+.section5 .section-title-box h2 {
+  margin-bottom: 20px;
+}
+
+.section5 img {
+  border-radius: 50%;
+}
+
+.section5 .card {
+  border: none;
+}
+
+.section5 .card:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.section5 .section5-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+/* FOOTER */
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .title {
+  font-size: 12px;
+  font-weight: 700;
+}
+.second-line {
+  border-top: 1px solid #d9dce0;
+  border-bottom: 1px solid #d9dce0;
+  font-size: 10px;
+}
+
+.third-line {
+  display: flex;
+  justify-content: center;
+}
+.award {
+  justify-content: center;
+}
+.awards-img {
+  text-align: center;
+}
+
+@media screen and (max-width:96rem) {
+  .second-line {
+    text-align: center;
+  }
+  .second-line-menu {
+    border-bottom: 1px solid #d9dce0;
+  }
+}
+
+
+
+/* 모바일 ------------------------------*/
+@media (max-width: 48rem) {
+
+  .banner {
+    display: none;
+  }
+  
+  .card {
+    margin-bottom: 10px;
+  }
+
+  /* section1 캐러셀 */
+  .carousel {
+    margin-bottom: 100px;
+  }
+
+  .carousel-title {
+    font-size: 25px;
+  }
+
+  .carousel-subtitle {  
+    font-size: 20px;
+  }
+
+  .carousel-description {
+    display: none;
+  }
+
+
+  /* section 2 특가 할인 */
+
+  /* section5 테마 여행*/
+  .section5-image-box {
+    display: block;
+  }
+
+  .section5-box-item {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  /* section3 추천상품*/
+  .card-item {
+    margin-right: 0;
+  }
+  .slick-arrow.prev {
+  top: 35%;
+  left: 0px;
+}
+
+.slick-arrow.next {
+  top: 35%;
+  right: 0px;
+}
+}

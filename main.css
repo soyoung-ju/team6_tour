@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'TTHakgyoansimKossuyeomR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimKossuyeomR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cafe24Syongsyong';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+section {
+  margin-top: 150px;
+}
+
+section h6 {
+  color: gray;
+  font-weight: 400;
+}
+
+.image-scale-box {
+  overflow: hidden;
+}
+
+.image-scale-box img {
+  transition: all 400ms;
+}
+
+.image-scale-box img:hover {
+  transform: scale(1.05);
+}
+
+a:hover {  
+  cursor : url(./image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+span:hover{
+  cursor : url(./image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+html:hover{
+  cursor : url(./image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+/* HEAEDR */
+
+header {
+  width: 100%;
+  background-color: #f6f5f0;
+  position: fixed;
+  top:0;
+  z-index: 9;
+}
+
+nav.navbar {
+  background-color: #f6f5f0 !important;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #4d8252;
+}
+
+.form-control {
+  background-color: #f6f5f0;
+}
+.btn-search {
+  text-wrap: nowrap;
+  border-color: #4d8252;
+  color:#4d8252;
+}
+.btn-search:hover {
+  background-color: #4d8252;
+  border-color: #4d8252;
+}
+.green {
+  color: #4d8252;
+}
+.black {
+  color: #767070;
+}
+.text-shadow {
+  text-shadow: 1px 1px 15px rgba(77,130,82, 0.4);
+}
+
+.carousel.slide {
+  padding-top: 67px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 8rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'TTHakgyoansimKossuyeomR';
+}
+.carousel-caption p{
+  margin: 0.5rem;
+}
+
+
+
+
+/* MD 추천 */
+
+.md-body {
+  position: relative;
+}
+
+.md-body img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.md-text-box {
+  width: 60%;
+  background-color: #fff;
+  box-shadow: 1px 1px 20px gray;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  border-radius: 10px 10px 0px 10px;
+  padding: 0.5rem;
+}
+.md-text-box p {
+  color: gray;
+}
+.md-price {
+  text-align: right;
+  font-weight: 700;
+}
+.md-small-text {
+  font-size: 16px;
+  color: gray;
+}
+
+
+/* CIRCLE CARD */
+
+.circle {
+  width: 100%;
+  background-color: #F8F4E1;
+}
+.circle-card {
+  border: 0;
+}
+.circle-card .circle-card-body {
+  position: relative;
+}
+.circle-card-des {
+  position: absolute;
+  top: 25%;
+  padding: 10px;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  font-family: 'Cafe24Syongsyong';
+  font-size: 24px;
+}
+.circle-card-text {
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.circle-card img {
+  filter: brightness(1);
+}
+
+.circle-card-body {
+  cursor: pointer;
+}
+
+.circle-card-body:hover img {
+  transform: scale(1.2);             
+  transition: transform .3s;
+  filter: brightness(0.5);
+}
+.circle-card-body:hover img + .circle-card-des {
+  opacity: 1;
+  transition: all .5s;
+}
+
+
+
+
+
+
+/* LIVE M : CARD*/
+.live .card {
+  border: 0;
+  border-radius: 15px;
+}
+
+.live .card .card-body {
+  padding: 15px 0px;
+}
+.btn-main {
+  width: 30%;
+}
+.card-text {
+  color: gray;
+  font-weight: 300;
+}
+
+/* BANNER */
+.banner {
+  margin-top: 120px;
+  background-image: url("./image/main/main_banner_bg.png");
+  background-position: center;
+}
+.banner .inner {
+  height: 710px;
+  position: relative; 
+}
+.banner .play.img-fluid {
+  position:absolute;
+  height: 100px;
+  top:48%;
+}
+
+.banner .tree.img-fluid {
+  position: absolute;
+  bottom: 280px;
+  right: 0px;
+  width: 400px;
+}
+
+.banner .members.img-fluid {
+  position: absolute;
+  width: 450px;
+  bottom: 100px;
+  right: 0px;
+}
+
+.banner .airplane {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 100px;
+}
+
+.banner .airplane-ment {
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'TTHakgyoansimKossuyeomR';
+  opacity: 1;
+}
+
+.banner .airplane.img-fluid:hover {
+  rotate: 10deg;
+}
+
+.banner .airplane.img-fluid:active {
+  transform: scale(10) 
+  translate(-1320px, -700px)
+  rotate(-45deg)
+  ; 
+  transition: all 5s;
+  opacity: 0;
+}
+
+.banner .logo.img-fluid {
+  position: absolute;
+  height: 40px;
+  bottom: 50px;
+  left: 30px;
+}
+
+.airplane span:not(.light) {
+  opacity: 0;
+  animation: flashText .5s ease-out alternate infinite;
+}
+
+span.light {
+  position: relative;
+  display: inline-block;
+}
+
+span.light:before {
+  position: absolute;
+  left: 0;
+  top: -10%;
+  width: 100%;
+  height: 120%;
+  background: tomato;
+  filter: blur(10px);
+  content: "";
+  opacity: 0;
+  animation: flash 0.5s ease-out alternate infinite;
+}
+
+@keyframes flash{
+  to {
+    opacity: .5;
+  }}
+
+@keyframes flashText {
+  to {
+    opacity: 0.15;
+  }}
+
+
+
+
+/* FOOTER */
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .title {
+  font-size: 12px;
+  font-weight: 700;
+}
+.second-line {
+  border-top: 1px solid #d9dce0;
+  border-bottom: 1px solid #d9dce0;
+  font-size: 10px;
+}
+
+@media screen and (max-width:96rem) {
+  .second-line {
+    text-align: center;
+  }
+  .second-line-menu {
+    border-bottom: 1px solid #d9dce0;
+  }
+}
+
+.third-line {
+  display: flex;
+  justify-content: center;
+}
+.award {
+  justify-content: center;
+}
+.awards-img {
+  text-align: center;
+}
+
+@media screen and (max-width:991px) {
+  section {
+    margin-top: 80px;
+  }
+  .btn-main {
+    width: 60%;
+  }
+  .circle-card-des {
+    top:30%
+  }
+}
+@media screen and (max-width:576px) {
+  section {
+    margin-top: 50px;
+  }
+}
