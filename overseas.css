@@ -84,7 +84,7 @@ nav.navbar {
     position: relative;
 }
   
-.theme-travel-card img {
+.tema-travel-card img {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,7 +93,7 @@ nav.navbar {
     object-fit: cover;
 }
   
-.theme-travel-card .card-text-container {
+.tema-travel-card .card-text-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,7 +106,7 @@ nav.navbar {
     text-shadow: 1px 1px 2px black;
 }
   
-.theme-travel-card:hover {
+.tema-travel-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -203,7 +203,7 @@ footer .title {
     }
 }
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .search-container {
         flex-direction: column;
         height: auto; 
