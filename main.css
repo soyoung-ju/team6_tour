@@ -107,6 +107,36 @@ nav.navbar {
 
 
 
+/* MD */
+
+.md-body {
+  position: relative;
+}
+
+.md-body img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.md-text-box {
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px gray;
+  position: absolute;
+  right: 0;
+  bottom: -4.5rem;
+  border-radius: 10px 10px 0px 10px;
+  padding: 0.5rem;
+}
+.md-price {
+  text-align: right;
+  font-weight: 700;
+}
+.md-small-text {
+  font-size: 16px;
+  color: gray;
+}
+
 
 /* CIRCLE CARD */
 
