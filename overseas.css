@@ -1,11 +1,8 @@
-body {
+* {
     margin: 0;
-    color: #333;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.4;
-    font-family: 'Nanum Gothic', sans-serif;
-}
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+  }
 
 a {
     text-decoration: none;
@@ -19,7 +16,7 @@ a {
     color: green;
 }
 
-.title {
+/* .title {
     font-weight: bold;
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -27,7 +24,7 @@ a {
 .sub-title {
     color: #696969;
     font-family: 'Nanum Gothic', sans-serif;
-}
+} */
 
 /* 
 .card:hover {
