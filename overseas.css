@@ -1,39 +1,94 @@
 body {
-    margin: 0;
-    box-sizing: border-box;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
     font-family: "Noto Sans KR", sans-serif;
-  }
+}
 
-a {
-    color: black;
-    text-decoration: none;
-    font-family: "Noto Sans KR", sans-serif;
+.green {
+    color: #4d8252;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: #f6f5f0;
+    position: fixed;
+    top:0;
+    z-index: 9;
+}
+
+nav.navbar {
+    background-color: #f6f5f0 !important;
 }
   
 .nav-link {
-    font-weight: 700;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #4d8252;
 }
   
-.nav-link:hover {
-    color: green;
+.form-control {
+    background-color: #f6f5f0;
 }
 
-/* Weekly 추천 테마 */
-.rounded-card {
-    border-radius: 50%; 
-    overflow: hidden; 
+.btn-search {
+    text-wrap: nowrap;
+    border-color: #4d8252;
+    color:#4d8252;
 }
 
-/*
-.title {
-    font-weight: bold;
-}
-*/
+.btn-search:hover {
+    background-color: #4d8252;
+    border-color: #4d8252;
+}  
+
+
 
 .sub-title {
     color: #696969;
 }
 
+/* 테마여행 */
+.rounded-card {
+    border-radius: 50%; 
+    overflow: hidden; 
+    width: 100%; 
+    padding-top: 100%; 
+    position: relative; 
+}
+
+.theme-travel-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.theme-travel-card .card-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-radius: 50%; 
+    overflow: hidden; 
+    text-shadow: 1px 1px 2px black;
+}
+
+.theme-travel-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* best상품 */
 .best-item .card-img-top:hover {
     transform: scale(1.1); 
     transition: transform 0.3s ease; 
@@ -44,13 +99,19 @@ a {
     padding: 10px 0;
 }
 
-/* 
-.card:hover {
-    transform: scale(1.02);
-    transition: 0.5s ease-in-out;
+/* 동남아 특가 */
+.sea-card {
+    margin-bottom: 13px;
 }
-*/
 
+.sea-card:hover .card-img-top {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+.sea-card .card-body p {
+    font-size: 12px; 
+}
 
 /* 기획전 */
 .special-exhibition .card:hover {
@@ -67,8 +128,56 @@ a {
 }
 
 
+/* footer */
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
 
+footer .title {
+    font-size: 12px;
+    font-weight: 700;
+}
 
+.second-line {
+    border-top: 1px solid #d9dce0;
+    border-bottom: 1px solid #d9dce0;
+    font-size: 10px;
+}
+  
+.third-line {
+    display: flex;
+    justify-content: center; 
+}
+
+.award {
+    justify-content: center;
+}
+
+.awards-img {
+    text-align: center;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width:96rem) {
+    .second-line {
+        text-align: center;
+      }
+      .second-line-menu {
+        border-bottom: 1px solid #d9dce0;
+      }
+}
+
+@media screen and (max-width: rem) { 
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .theme-travel-card .card-text-container {
+        display: none;
+    }
+}
 
 
 
