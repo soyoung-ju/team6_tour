@@ -61,7 +61,6 @@ a {
 }
 
 /* HEAEDR */
-
 header {
   width: 100%;
   background-color: #f6f5f0;
@@ -73,25 +72,26 @@ header {
 nav.navbar {
   background-color: #f6f5f0 !important;
 }
-.navbar {
-  height: 70px;
-}
 
 .nav-link {
-  font-weight: 700;
+  font-weight: 500;
 }
 .nav-link:hover {
-  color: green;
+  color: #4d8252;
 }
 
 .form-control {
   background-color: #f6f5f0;
 }
-
-.carousel-caption {
-  font-family: 'TTHakgyoansimKossuyeomR';
+.btn-search {
+  text-wrap: nowrap;
+  border-color: #4d8252;
+  color:#4d8252;
 }
-
+.btn-search:hover {
+  background-color: #4d8252;
+  border-color: #4d8252;
+}
 
 
 /* section 1 캐러셀 */
