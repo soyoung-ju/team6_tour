@@ -42,6 +42,17 @@ nav.navbar {
     background-color: #4d8252;
     border-color: #4d8252;
 }
+
+a:hover {  
+    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+span:hover{
+    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+html:hover{
+    cursor : url(/image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
   
 .sub-title {
     color: #696969;
@@ -64,6 +75,7 @@ nav.navbar {
 .travel-search-button {
     padding: 0 33px; 
     height: 40px; 
+    margin-bottom: 10px;
 }
 
 #destination,

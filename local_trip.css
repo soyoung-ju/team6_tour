@@ -92,6 +92,9 @@ a{
 .price{
     color: green;
 }
+.green {
+    color: #4d8252;
+}
 
 
 
@@ -171,6 +174,7 @@ html:hover{
     }
 }
 
+
 /* 카드_2 */
 .section2{
     margin-top: 150px;
@@ -224,11 +228,9 @@ html:hover{
     .mobile_hide{
         display: none;
     }
-
     .section1_mobile{
         display: block;
     }
-
     .section2_box1{
         display: block;
         text-align: center;
