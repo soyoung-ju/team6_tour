@@ -46,6 +46,16 @@ section h6 {
   transform: scale(1.05);
 }
 
+a:hover {  
+  cursor : url(./image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+span:hover{
+  cursor : url(./image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
+
+html:hover{
+  cursor : url(./image/cursor.png) 20 30, url(...) 20 30, auto; 
+}
 
 /* HEAEDR */
 
@@ -84,7 +94,7 @@ nav.navbar {
   color: #4d8252;
 }
 .black {
-  color: #333;
+  color: #767070;
 }
 .text-shadow {
   text-shadow: 1px 1px 15px rgba(77,130,82, 0.4);
@@ -103,11 +113,14 @@ nav.navbar {
   text-align: center;
   font-family: 'TTHakgyoansimKossuyeomR';
 }
+.carousel-caption p{
+  margin: 0.5rem;
+}
 
 
 
 
-/* MD */
+/* MD 추천 */
 
 .md-body {
   position: relative;
@@ -119,14 +132,17 @@ nav.navbar {
   overflow: hidden;
 }
 .md-text-box {
-  width: 70%;
+  width: 60%;
   background-color: #fff;
-  box-shadow: 1px 1px 5px gray;
+  box-shadow: 1px 1px 20px gray;
   position: absolute;
   right: 0;
-  bottom: -4.5rem;
+  top: 70%;
   border-radius: 10px 10px 0px 10px;
   padding: 0.5rem;
+}
+.md-text-box p {
+  color: gray;
 }
 .md-price {
   text-align: right;
