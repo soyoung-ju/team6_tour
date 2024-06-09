@@ -1,3 +1,71 @@
+/* 헤더 */
+header {
+    width: 100%;
+    background-color: #f6f5f0;
+    position: fixed;
+    top:0;
+    z-index: 9;
+}
+nav.navbar {
+background-color: #f6f5f0 !important;
+}
+.nav-link {
+font-weight: 500;
+}
+.nav-link:hover {
+color: #4d8252;
+}
+.form-control {
+background-color: #f6f5f0;
+}
+.btn-search {
+text-wrap: nowrap;
+border-color: #4d8252;
+color:#4d8252;
+}
+.btn-search:hover {
+background-color: #4d8252;
+border-color: #4d8252;
+}
+
+/* 푸터 */
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+footer .title {
+font-size: 12px;
+font-weight: 700;
+}
+.second-line {
+border-top: 1px solid #d9dce0;
+border-bottom: 1px solid #d9dce0;
+font-size: 10px;
+}
+
+.third-line {
+display: flex;
+justify-content: center;
+}
+.award {
+justify-content: center;
+}
+.awards-img {
+text-align: center;
+}
+
+@media screen and (max-width:96rem) {
+.second-line {
+    text-align: center;
+}
+.second-line-menu {
+    border-bottom: 1px solid #d9dce0;
+}
+}
+
+
+
 /* 공통 */
 body {
     margin: 0px;
@@ -32,30 +100,6 @@ a{
     width: 100%;
 }
 .price{
-    color: green;
-}
-
-
-/* 캐러셀 */
-header {
-    width: 100%;
-    background-color: #f6f5f0;
-    border-bottom: 1px solid #c8c8c8;
-    position: fixed;
-    top:0;
-    z-index: 9;
-    font-family: 'OTWelcomeRA';
-}
-nav.navbar {
-    background-color: #f6f5f0 !important;
-}
-.navbar {
-height: 70px;
-}
-.nav-link {
-    font-weight: 700;
-}
-.nav-link:hover {
     color: green;
 }
 
